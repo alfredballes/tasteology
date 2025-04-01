@@ -1,3 +1,9 @@
+/*
+* Author: Alfred Balles 
+* Version: 1.0
+*/
+
+/* General */
 body {
     background-color: #0e1414 !important;
 }
@@ -25,6 +31,8 @@ img:hover {
 img+img {
     margin-top: 10px;
 }
+
+/* Section 1 Design */
 .section-text {
     color: #fff;
     font-family: "Open Sans", sans-serif;
@@ -59,6 +67,8 @@ img+img {
     font-size: 21px;
     line-height: 30px;
 }
+
+/* Section 2 Design */
 #secondary {
     color: #fff;
     font-family: "Open Sans", sans-serif;
@@ -90,18 +100,71 @@ img+img {
     margin-bottom: 10px;
     line-height: 30px;
 }
+.blurb-text h3 a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
 .blurb-text p {
     font-weight: 300;
     font-size: 21px;
     line-height: 30px;
     text-align: center;
 }
+.blurb-text h3 a.red:hover {
+    color: red;
+    transition: color 0.5s linear;
+}
+.blurb-text h3 a.green:hover {
+    color: green;
+    transition: color 0.5s linear;
+}
+.blurb-text h3 a.red:after {
+    content: "";
+    display: block !important;
+    height: 2px;
+    width: 0px;
+    background: red;
+}
+.blurb-text h3 a.green:after {
+    content: "";
+    display: block !important;
+    height: 2px;
+    width: 0px;
+    background: green;
+}
+.blurb-text h3 a.white:after {
+    content: "";
+    display: block !important;
+    height: 2px;
+    width: 0px;
+    background: white;
+}
+.blurb-text h3 a:hover:after {
+    width: 100%;
+    transition: width 0.5s linear;
+}
 
-@media (min-width: 767px) {
+/* Medium Size screen */
+@media (min-width:768px) and (max-width:1024px) {
+    .section-text h2 {
+        margin-top: 30px;
+    }
+    img {
+        height: auto;
+    }
+}
+
+/* Mobile Phone responsiveness */
+@media (max-width:767px){
     .col-sm-12 {
         flex: 0 0 auto !important;
         width: 100% !important;
         padding: 0 30px !important;
+    }
+    .section-text h2 {
+        margin-top: 30px;
     }
     img {
         height: auto;
