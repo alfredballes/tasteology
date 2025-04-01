@@ -15,7 +15,8 @@ section {
 .container {
     max-width: 1170px !important;
 }
-.col-12.col-md-4 {
+.col-sm-12.col-lg-4,
+.col-sm-12.col-md-4 {
     padding: 0 5px;
 }
 img {
@@ -28,7 +29,7 @@ img:hover {
     border-color: #fff;
     transition: all 0.5s linear;
 }
-img+img {
+a+a > img {
     margin-top: 10px;
 }
 
