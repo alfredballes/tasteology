@@ -1,4 +1,4 @@
-#main {
+section {
     background-color: #0e1414;
     padding-top: 120px;
     padding-bottom: 120px;
@@ -11,6 +11,13 @@
 }
 img {
     width: 100%;
+    border: 1px solid transparent;
+}
+img:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 1px #fff;
+    border-color: #fff;
+    transition: all 0.5s linear;
 }
 img+img {
     margin-top: 10px;
@@ -48,4 +55,41 @@ img+img {
     font-weight: bold;
     font-size: 21px;
     line-height: 30px;
+}
+#secondary {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+#secondary .col-12:not(.blurb) {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#secondary h2 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 33px;
+    letter-spacing: 1.5px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+}
+.blurb-text {
+    padding: 30px;
+}
+.blurb-text h3 {
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+.blurb-text p {
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 30px;
+    text-align: center;
 }
