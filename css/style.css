@@ -1,3 +1,6 @@
+body {
+    background-color: #0e1414 !important;
+}
 section {
     background-color: #0e1414;
     padding-top: 120px;
@@ -60,7 +63,7 @@ img+img {
     color: #fff;
     font-family: "Open Sans", sans-serif;
 }
-#secondary .col-12:not(.blurb) {
+#secondary .col-sm-12:not(.blurb) {
     align-items: center;
     justify-content: center;
     display: flex;
@@ -92,4 +95,16 @@ img+img {
     font-size: 21px;
     line-height: 30px;
     text-align: center;
+}
+
+@media (min-width: 767px) {
+    .col-sm-12 {
+        flex: 0 0 auto !important;
+        width: 100% !important;
+        padding: 0 30px !important;
+    }
+    img {
+        height: auto;
+        margin-bottom: 10px;
+    }
 }
